@@ -1,0 +1,239 @@
+/* -----------------------------------------------------------------------------
+
+  SLACK LOGO COMPONENT
+  
+----------------------------------------------------------------------------- */
+
+// variables
+
+$slack-size: 96px;
+$dot-diameter: 18px;
+$slack-angle: 15deg;
+$duration: 2s;
+
+$slack-blue: #6ecadc;
+$slack-yellow: #e9a820;
+$slack-pink: #e01563;
+$slack-green: #3eb991;
+
+
+
+
+
+/**
+ * Slack logo parent class.
+ *
+ * This class houses everything, all the dots, etc. Everything that exists for
+ * the logo is relative to this container.
+ */
+
+.c-slack {
+  position: relative;
+  z-index: 100;
+  margin: 80px auto;
+  width: $slack-size;
+  height: $slack-size;
+  transform: rotate(-$slack-angle);
+}
+
+
+
+
+
+/**
+ * Slack dots.
+ *
+ * Slack dots are the actual dots that move around and expand. Each of them
+ * are a different colour, and also need to be positioned in different parts
+ * of the container. Each also have different animations due to position. The
+ * modifiers takes care of all these.
+ */
+
+.c-slack__dot {
+  display: block;
+  position: absolute;
+  width: $dot-diameter;
+  height: $dot-diameter;
+  border-radius: $dot-diameter/2;
+  mix-blend-mode: multiply;
+}
+
+.c-slack__dot--a {
+  top: 0; left: 0;
+  background-color: $slack-green;
+  transform: translateX($dot-diameter);
+  animation: slack-animation--a $duration infinite;
+}
+
+.c-slack__dot--b {
+  top: 0; right: 0;
+  background-color: $slack-blue;
+  transform: translateY($dot-diameter);
+  animation: slack-animation--b $duration infinite;
+}
+
+.c-slack__dot--c {
+  bottom: 0; right: 0;
+  background-color: $slack-yellow;
+  transform: translateX(-$dot-diameter);
+  animation: slack-animation--c $duration infinite;
+}
+
+.c-slack__dot--d {
+  bottom: 0; left: 0;
+  background-color: $slack-pink;
+  transform: translateY(-$dot-diameter);
+  animation: slack-animation--d $duration infinite;
+}
+
+
+
+
+
+/**
+ * Slack animation a
+ *
+ * The animation sequence for dot a.
+ */
+
+@keyframes slack-animation--a {
+  0% {
+    top: 0;
+    bottom: auto;
+    height: $dot-diameter;
+  }
+  33% {
+    top: 0;
+    bottom: auto;
+    height: $slack-size;
+  }
+  34% {
+    top: auto;
+    bottom: -($slack-size - $slack-size);
+    height: $slack-size;
+  }
+  66% {
+    top: auto;
+    bottom: -($slack-size - $slack-size);
+    height: $dot-diameter;
+  }
+  100% {
+    top: auto;
+    bottom: $slack-size - $dot-diameter;
+    height: $dot-diameter;
+  }
+}
+
+
+
+
+
+/**
+ * Slack animation b
+ *
+ * The animation sequence for dot b.
+ */
+
+@keyframes slack-animation--b {
+  0% {
+    right: 0;
+    left: auto;
+    width: $dot-diameter;
+  }
+  33% {
+    right: 0;
+    left: auto;
+    width: $slack-size;
+  }
+  34% {
+    right: auto;
+    left: -($slack-size - $slack-size);
+    width: $slack-size;
+  }
+  66% {
+    right: auto;
+    left: -($slack-size - $slack-size);
+    width: $dot-diameter;
+  }
+  100% {
+    right: auto;
+    left: $slack-size - $dot-diameter;
+    width: $dot-diameter;
+  }
+}
+
+
+
+
+
+/**
+ * Slack animation c
+ *
+ * The animation sequence for dot c.
+ */
+
+@keyframes slack-animation--c {
+  0% {
+    bottom: 0;
+    top: auto;
+    height: $dot-diameter;
+  }
+  33% {
+    bottom: 0;
+    top: auto;
+    height: $slack-size;
+  }
+  34% {
+    bottom: auto;
+    top: -($slack-size - $slack-size);
+    height: $slack-size;
+  }
+  66% {
+    bottom: auto;
+    top: -($slack-size - $slack-size);
+    height: $dot-diameter;
+  }
+  100% {
+    bottom: auto;
+    top: $slack-size - $dot-diameter;
+    height: $dot-diameter;
+  }
+}
+
+
+
+
+
+/**
+ * Slack animation d
+ *
+ * The animation sequence for dot d.
+ */
+
+@keyframes slack-animation--d {
+  0% {
+    left: 0;
+    right: auto;
+    width: $dot-diameter;
+  }
+  33% {
+    left: 0;
+    right: auto;
+    width: $slack-size;
+  }
+  34% {
+    left: auto;
+    right: -($slack-size - $slack-size);
+    width: $slack-size;
+  }
+  66% {
+    left: auto;
+    right: -($slack-size - $slack-size);
+    width: $dot-diameter;
+  }
+  100% {
+    left: auto;
+    right: $slack-size - $dot-diameter;
+    width: $dot-diameter;
+  }
+}
