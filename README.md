@@ -4,7 +4,7 @@ Recreating the [Slack](https://slack.com/) animating logo using only CSS.
 
 ## Live Demo
 
-View the live demo here.
+View the live demo [here.](http://callmenick.com/_development/slack-logo/)
 
 ## License & Copyright
 
