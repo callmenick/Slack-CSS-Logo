@@ -109,12 +109,12 @@ $slack-green: #3eb991;
   }
   34% {
     top: auto;
-    bottom: -($slack-size - $slack-size);
+    bottom: 0;
     height: $slack-size;
   }
   66% {
     top: auto;
-    bottom: -($slack-size - $slack-size);
+    bottom: 0;
     height: $dot-diameter;
   }
   100% {
@@ -147,12 +147,12 @@ $slack-green: #3eb991;
   }
   34% {
     right: auto;
-    left: -($slack-size - $slack-size);
+    left: 0;
     width: $slack-size;
   }
   66% {
     right: auto;
-    left: -($slack-size - $slack-size);
+    left: 0;
     width: $dot-diameter;
   }
   100% {
@@ -185,12 +185,12 @@ $slack-green: #3eb991;
   }
   34% {
     bottom: auto;
-    top: -($slack-size - $slack-size);
+    top: 0;
     height: $slack-size;
   }
   66% {
     bottom: auto;
-    top: -($slack-size - $slack-size);
+    top: 0;
     height: $dot-diameter;
   }
   100% {
@@ -223,12 +223,12 @@ $slack-green: #3eb991;
   }
   34% {
     left: auto;
-    right: -($slack-size - $slack-size);
+    right: 0;
     width: $slack-size;
   }
   66% {
     left: auto;
-    right: -($slack-size - $slack-size);
+    right: 0;
     width: $dot-diameter;
   }
   100% {

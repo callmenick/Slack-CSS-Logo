@@ -357,12 +357,12 @@ img {
   }
   34% {
     top: auto;
-    bottom: 0px;
+    bottom: 0;
     height: 96px;
   }
   66% {
     top: auto;
-    bottom: 0px;
+    bottom: 0;
     height: 18px;
   }
   100% {
@@ -384,12 +384,12 @@ img {
   }
   34% {
     top: auto;
-    bottom: 0px;
+    bottom: 0;
     height: 96px;
   }
   66% {
     top: auto;
-    bottom: 0px;
+    bottom: 0;
     height: 18px;
   }
   100% {
@@ -416,12 +416,12 @@ img {
   }
   34% {
     right: auto;
-    left: 0px;
+    left: 0;
     width: 96px;
   }
   66% {
     right: auto;
-    left: 0px;
+    left: 0;
     width: 18px;
   }
   100% {
@@ -443,12 +443,12 @@ img {
   }
   34% {
     right: auto;
-    left: 0px;
+    left: 0;
     width: 96px;
   }
   66% {
     right: auto;
-    left: 0px;
+    left: 0;
     width: 18px;
   }
   100% {
@@ -475,12 +475,12 @@ img {
   }
   34% {
     bottom: auto;
-    top: 0px;
+    top: 0;
     height: 96px;
   }
   66% {
     bottom: auto;
-    top: 0px;
+    top: 0;
     height: 18px;
   }
   100% {
@@ -502,12 +502,12 @@ img {
   }
   34% {
     bottom: auto;
-    top: 0px;
+    top: 0;
     height: 96px;
   }
   66% {
     bottom: auto;
-    top: 0px;
+    top: 0;
     height: 18px;
   }
   100% {
@@ -534,12 +534,12 @@ img {
   }
   34% {
     left: auto;
-    right: 0px;
+    right: 0;
     width: 96px;
   }
   66% {
     left: auto;
-    right: 0px;
+    right: 0;
     width: 18px;
   }
   100% {
@@ -561,12 +561,12 @@ img {
   }
   34% {
     left: auto;
-    right: 0px;
+    right: 0;
     width: 96px;
   }
   66% {
     left: auto;
-    right: 0px;
+    right: 0;
     width: 18px;
   }
   100% {
