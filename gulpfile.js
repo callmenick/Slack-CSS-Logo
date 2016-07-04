@@ -7,7 +7,7 @@ var concat = require('gulp-concat');
 var gutil = require('gulp-util');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 
 // js task
@@ -24,10 +24,8 @@ gulp.task('js', function() {
 
 // styles task
 gulp.task('styles', function() {
-  return sass('./sass', {
-      style: 'expanded',
-      noCache: true
-    })
+  return gulp.src('./sass/*.scss')
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .on('error', function(err) {
       gutil.beep();
       console.error(err);

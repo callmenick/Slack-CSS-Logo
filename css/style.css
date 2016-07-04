@@ -10,6 +10,7 @@
   src: url("../fonts/oxygen/oxygen-v5-latin-300.eot");
   src: local("Oxygen Light"), local("Oxygen-Light"), url("../fonts/oxygen/oxygen-v5-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/oxygen/oxygen-v5-latin-300.woff2") format("woff2"), url("../fonts/oxygen/oxygen-v5-latin-300.woff") format("woff"), url("../fonts/oxygen/oxygen-v5-latin-300.ttf") format("truetype"), url("../fonts/oxygen/oxygen-v5-latin-300.svg#Oxygen") format("svg");
 }
+
 @font-face {
   font-family: 'Oxygen';
   font-style: normal;
@@ -17,6 +18,7 @@
   src: url("../fonts/oxygen/oxygen-v5-latin-regular.eot");
   src: local("Oxygen"), local("Oxygen-Regular"), url("../fonts/oxygen/oxygen-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/oxygen/oxygen-v5-latin-regular.woff2") format("woff2"), url("../fonts/oxygen/oxygen-v5-latin-regular.woff") format("woff"), url("../fonts/oxygen/oxygen-v5-latin-regular.ttf") format("truetype"), url("../fonts/oxygen/oxygen-v5-latin-regular.svg#Oxygen") format("svg");
 }
+
 @font-face {
   font-family: 'Oxygen';
   font-style: normal;
@@ -24,6 +26,7 @@
   src: url("../fonts/oxygen/oxygen-v5-latin-700.eot");
   src: local("Oxygen Bold"), local("Oxygen-Bold"), url("../fonts/oxygen/oxygen-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/oxygen/oxygen-v5-latin-700.woff2") format("woff2"), url("../fonts/oxygen/oxygen-v5-latin-700.woff") format("woff"), url("../fonts/oxygen/oxygen-v5-latin-700.ttf") format("truetype"), url("../fonts/oxygen/oxygen-v5-latin-700.svg#Oxygen") format("svg");
 }
+
 /* -----------------------------------------------------------------------------
 
   BOX SIZING RESET
@@ -125,11 +128,13 @@ img {
     padding: 0 24px;
   }
 }
+
 @media all and (min-width: 720px) {
   .o-container {
     padding: 0 48px;
   }
 }
+
 /* -----------------------------------------------------------------------------
 
   HEADER OBJECT
@@ -142,11 +147,9 @@ img {
 
 .o-header-nav {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #28aadc;
@@ -177,6 +180,7 @@ img {
     font-size: 42px;
   }
 }
+
 /* -----------------------------------------------------------------------------
 
   MAIN OBJECT
@@ -198,14 +202,11 @@ img {
 
 .o-sub-nav__items {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
@@ -236,6 +237,7 @@ img {
     margin: 0 0 48px 0;
   }
 }
+
 /* -----------------------------------------------------------------------------
 
   FOOTER OBJECT
@@ -251,11 +253,13 @@ img {
     padding: 24px 0;
   }
 }
+
 @media all and (min-width: 720px) {
   .o-footer {
     padding: 48px 0;
   }
 }
+
 /* -----------------------------------------------------------------------------
 
   SLACK LOGO COMPONENT
@@ -274,7 +278,6 @@ img {
   width: 96px;
   height: 96px;
   -webkit-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
           transform: rotate(-15deg);
 }
 
@@ -300,7 +303,6 @@ img {
   left: 0;
   background-color: #3eb991;
   -webkit-transform: translateX(18px);
-      -ms-transform: translateX(18px);
           transform: translateX(18px);
   -webkit-animation: slack-animation--a 2s infinite;
           animation: slack-animation--a 2s infinite;
@@ -311,7 +313,6 @@ img {
   right: 0;
   background-color: #6ecadc;
   -webkit-transform: translateY(18px);
-      -ms-transform: translateY(18px);
           transform: translateY(18px);
   -webkit-animation: slack-animation--b 2s infinite;
           animation: slack-animation--b 2s infinite;
@@ -322,7 +323,6 @@ img {
   right: 0;
   background-color: #e9a820;
   -webkit-transform: translateX(-18px);
-      -ms-transform: translateX(-18px);
           transform: translateX(-18px);
   -webkit-animation: slack-animation--c 2s infinite;
           animation: slack-animation--c 2s infinite;
@@ -333,7 +333,6 @@ img {
   left: 0;
   background-color: #e01563;
   -webkit-transform: translateY(-18px);
-      -ms-transform: translateY(-18px);
           transform: translateY(-18px);
   -webkit-animation: slack-animation--d 2s infinite;
           animation: slack-animation--d 2s infinite;
@@ -398,6 +397,7 @@ img {
     height: 18px;
   }
 }
+
 /**
  * Slack animation b
  *
@@ -457,6 +457,7 @@ img {
     width: 18px;
   }
 }
+
 /**
  * Slack animation c
  *
@@ -516,6 +517,7 @@ img {
     height: 18px;
   }
 }
+
 /**
  * Slack animation d
  *
@@ -575,6 +577,7 @@ img {
     width: 18px;
   }
 }
+
 /* -----------------------------------------------------------------------------
 
   CARBON AD COMPONENT
