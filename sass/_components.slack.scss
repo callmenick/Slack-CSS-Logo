@@ -33,7 +33,7 @@ $slack-green: #3eb991;
   margin: 80px auto;
   width: $slack-size;
   height: $slack-size;
-  transform: rotate(-$slack-angle);
+  transform: rotate(-$slack-angle) translateZ(0);
 }
 
 

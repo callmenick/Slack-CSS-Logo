@@ -273,9 +273,8 @@ img {
   margin: 80px auto;
   width: 96px;
   height: 96px;
-  -webkit-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg) translateZ(0);
+          transform: rotate(-15deg) translateZ(0);
 }
 
 /**
